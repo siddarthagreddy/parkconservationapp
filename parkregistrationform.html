@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Registration Form</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Conservation Park Registration Form</h2>
+        <form id="parkRegistrationForm">
+            <div class="form-group">
+                <label for="parkName">Park Name:</label>
+                <input type="text" class="form-control" id="parkName" name="parkName" required>
+            </div>
+            <div class="form-group">
+                <label for="parkLocation">Location (latitude and longitude or address):</label>
+                <input type="text" class="form-control" id="parkLocation" name="parkLocation" required>
+            </div>
+            <div class="form-group">
+                <label for="establishmentDate">Establishment Date:</label>
+                <input type="date" class="form-control" id="establishmentDate" name="establishmentDate" required>
+            </div>
+            <div class="form-group">
+                <label for="parkArea">Area:</label>
+                <input type="text" class="form-control" id="parkArea" name="parkArea" placeholder="Enter in acres or square kilometers" required>
+            </div>
+            <div class="form-group">
+                <label for="conservationStatus">Conservation Status:</label>
+                <select class="form-control" id="conservationStatus" name="conservationStatus" required>
+                    <option value="">Select Status</option>
+                    <option value="endangered">Endangered</option>
+                    <option value="vulnerable">Vulnerable</option>
+                    <option value="leastConcern">Least Concern</option>
+                    <option value="nearThreatened">Near Threatened</option>
+                    <option value="notEvaluated">Not Evaluated</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" onclick="document.location='index.html'" class="btn btn-primary">Cancel</button>
+        </form>
+    </div>
+    <!-- Include Bootstrap JS and its dependencies below -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
